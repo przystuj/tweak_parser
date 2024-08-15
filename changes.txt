@@ -1,0 +1,813 @@
+---zZxOt
+--Hornet Balance Pack 0.90a
+{
+--bots & lab
+corthud = {
+	health = 1100,
+},
+armham = {
+	health = 1000,
+},
+cornecro = {
+	workertime = 150,
+},
+armrectr = {
+	workertime = 150,
+},
+--lab anims
+corvp = {
+	customparams = {
+		litelab = true,
+	},
+},
+coravp = {
+	script = "Units/coravp_lite_clean.cob",
+},
+corlab = {
+	customparams = {
+		litelab = true,
+	},
+},
+coralab = {
+	customparams = {
+		litelab = true,
+	},
+},
+--naval shields
+armacsub = {
+	buildoptions = {
+		[16] = "armfgate",
+	},
+},
+coracsub = {
+	buildoptions = {
+		[16] = "corfgate",
+	},
+},
+--shockwave
+armack = {
+	buildoptions = {
+		[31] = "armshockwave",
+	},
+},
+armaca = {
+	buildoptions = {
+		[34] = "armshockwave",
+	},
+},
+armacv = {
+	buildoptions = {
+		[31] = "armshockwave",
+	},
+},
+--salas etc
+armamsub = {
+	energycost = 9750,
+	metalcost = 1550,
+	buildtime = 14500,
+	buildoptions = {
+		[7] = "armamph",
+	},
+},
+coramsub = {
+	energycost = 10000,
+	metalcost = 1600,
+	buildtime = 15000,
+	buildoptions = {
+		[8] = "coramph",
+	},
+},
+corsala = {
+	--speed = 70,
+	--buildtime = 9000,
+	--energycost = 7000,
+},
+
+--radar 
+	armjamt = {
+		cloakcost = 100,
+		radardistancejam = 400,
+	},
+
+	corarad = {
+		radardistance = 4500,
+		sightdistance = 1000,
+	},
+	armarad = {
+		radardistance = 4500,
+		sightdistance = 1000,
+	},
+	armsd = {
+		radardistance = 2000,
+		radaremitheight = 8000,
+	},
+	corsd = {
+		radardistance = 2000,
+		radaremitheight = 8000,
+	},
+---T3 -exp-
+corkorg = {
+	energycost = 550000,
+	metalcost = 25000,
+	buildtime = 485000,
+	selfdestructcountdown = 5,
+},
+
+corkarg = {
+	energycost = 50000,
+	metalcost = 2200,
+	buildtime = 42500,
+	turnrate = 500,
+	speed = 48.0,
+},
+armmar = {
+	weapondefs = {
+		armmech_cannon = {
+			damage = {
+				default = 180,
+			},
+		},
+	},
+},
+	armraz = {
+		speed = 62.0,
+	},
+	cordemon = {
+		health = 22000,
+		maxwaterdepth = 32,
+		speed = 72.0,
+		customparams = {
+		maxrange = "425",
+		},
+		weapondefs = {
+			newdmaw = { 
+				range = 430,
+				damage = {
+					default = 40,
+				}
+			},
+		},
+	},
+--porc
+armanni = {
+		weapondefs = {
+				atam = {
+						range = 1350,
+				},
+		},
+},
+cordoom = {
+	weapondefs = {
+		atadr = {
+			range = 1250,
+		},
+	},
+},
+armamb = {
+	buildtime = 35000,
+	weapondefs = {
+		armamb_gun = {
+			range = 1300,
+		},
+		armamb_gun_high = {
+			range = 1300,
+		},
+	},
+},
+cortoast = {
+	buildtime = 32000,
+	weapondefs = {
+		cortoast_gun = {
+			range = 1310,
+		},
+		cortoast_gun_high = {
+			range = 1310,
+		},
+	},
+},
+armemp = {
+	weapondefs = {
+		armemp_weapon = {
+			range = 3000,
+		},
+	},
+},
+	legstarfall = {
+		energycost = 960000,
+		metalcost = 84000,
+		buildtime = 2000000,
+	},
+
+	corbuzz = {
+		energycost = 1150000,
+		metalcost = 97000,
+		buildtime = 2250000,
+	},
+
+	armvulc = {
+		energycost = 1200000,
+		metalcost = 100000,
+		buildtime = 2250000
+	},
+--
+corwin = {
+	health = 249,
+	energystorage = 50,
+	buildtime = 1500,
+},
+legwin = {
+	energystorage = 100,
+},
+--targetting QoL
+armfboy = {
+	weapondefs = {
+		arm_fatboy_notalaser = {
+			leadlimit = 128,
+			proximityPriority  = -0.3,
+		},
+	},
+},
+armmanni = {
+        weapondefs = {
+                atam = {
+                        reloadtime = 5.5
+                }
+        },
+},
+corcat = {
+	weapondefs = {
+		exp_heavyrocket= {
+			leadlimit = 120,
+			proximityPriority  = -0.2,
+		},
+	},
+},
+correap = {
+	buildtime = 10000,
+	weapondefs = {
+		cor_reap = {
+			damage = {
+				default = 120,
+			},
+		},
+	},
+},
+corgol = {
+	weapondefs = {
+		cor_gol = {
+			leadlimit = 128,
+			proximityPriority  = -0.3,
+		},
+	},
+},
+corparrow = {
+	sightdistance = 600,
+	speed = 54,
+	weapondefs = {
+		cor_parrow = {
+			leadlimit = 128,
+			proximityPriority  = -0.3,
+		},
+	},
+	weapons = {
+		[1] = {
+			fastautoretargeting = true,
+			weaponAimAdjustPriority = 125,
+		},
+	},
+},
+armmercury = {
+	weapondefs = {
+		arm_advsam = {
+			customparams = {
+				speceffect = "retarget",
+				when = "always",
+			},
+		},
+	},
+	weapons = {
+		[1] = {
+			fastautoretargeting = true,
+		},
+	},
+},
+corscreamer = {
+	weapondefs = {
+		cor_advsam = {
+			customparams = {
+				speceffect = "retarget",
+				when = "always",
+			},
+		},
+	},
+	weapons = {
+		[1] = {
+			fastautoretargeting = true,
+		},
+	},
+},
+--gunship/air tuning
+corseah = {
+	health = 4000,
+},
+armliche = {
+	speed = 260,-- -35
+	buildtime = 77400,--w 57400
+	energycost = 66000,--w 46000
+	weapondefs = {
+		arm_pidr = {
+			damage = {
+				lboats = 2810,
+				hvyboats = 3350,
+			},
+		},
+	},
+},
+--T2aa boat / torp bomber interactions
+corarch = {
+	weapondefs = {
+		ga2 = {
+			range = 970,
+		},
+	},
+},
+armaas = {
+	weapondefs = {
+		ga2 = {
+			range = 870,
+		},
+	},
+},
+--
+armlance = {
+	turninplaceanglelimit = 360,
+	turnrate = 650,
+	customparams = {
+		maxrange = "700",
+	},
+	turnrate = 550,
+	acceleration = 0.27,
+	maxdec = 0.42,
+	hoverattack = true,
+	health = 2200,
+	weapondefs = {
+		armair_torpedo = {
+			customparams = {
+				speceffect = "torpwaterpen",
+				when = "ypos<0",
+			},
+		burstrate = 0.3,
+		burst = 4,
+		range = 700,
+		reload = 5,
+		turnrate = 30000,
+		weaponacceleration = 25,
+			damage = {
+				default = 342,
+			},
+
+		},
+	},
+},
+cortitan = {
+	customparams = {
+		maxrange = "700",
+	},
+	turnrate = 700,
+	acceleration = 0.25,
+	maxdec = 0.40,
+	hoverattack = true,
+	health = 2560,
+	weapondefs = {
+		armair_torpedo = {
+			customparams = {
+				speceffect = "torpwaterpen",
+				when = "ypos<0",
+			},
+		burstrate = 0.3,
+		burst = 4,
+		range = 700,
+		reload = 5,
+		turnrate = 30000,
+		weaponacceleration = 25,
+			damage = {
+				default = 342,
+			},
+		},
+	},
+},
+armkam = {
+	weapondefs = {
+		med_emg = {
+		burst = 1,
+		impulseboost = 2,
+		impulsefactor = 2,
+		name = "A2G Riot Shotgun",
+		soundstart = "cannon1clean",
+		projectiles = 10,
+		damage = {
+				default = 8,
+			},
+		},
+	},
+},
+--
+armblade = {
+	energycost = 12000,
+	metalcost = 750,
+	buildtime = 14000,
+	health = 1800,
+	speed = 160.0,
+	weapondefs = {
+		vtol_sabot = {
+			range = 625,
+		},
+	},
+},	
+armdrone = {
+	health = 300,
+},
+cordrone = {
+	health = 300,
+},
+corhal = {
+	speed = 50,
+	sightdistance = 500,
+	weapondefs = {
+		cor_canlaser = {
+			range = 350,
+		},
+	},
+},
+armcroc = {
+	sightdistance = 550,
+},
+	cormlv = {
+		health = 500,
+	},
+	armmlv = {
+		health = 200,
+	},
+
+	coravp = {
+		buildoptions = {
+			[14] = "corsiegebreaker",
+			[15] = "corprinter",
+			[16] = "corphantom",
+		},
+	},
+--naval
+	armepoch = {
+		metalcost = 14000,
+	},
+	armshltxuw = {
+		yardmap = "h ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco",
+		buildoptions = {
+			[5] = "armepoch",
+		},
+	},
+	armasy = {
+		buildoptions = {
+			[11] = "armtrident",
+			[13] = "armdronecarry",
+			[14] = "armseadragon",
+			[15] = "armexcalibur",
+		},
+	},
+	corblackhy = {
+		metalcost = 14000,
+	},
+	corgantuw = {
+		yardmap = "h ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo ooooooooo occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco occcccccc cccccccco",
+		buildoptions = {
+			[6] = "corblackhy",
+		},
+	},
+	corasy = {
+		buildoptions = {
+			[11] = "corsentinel",
+			[13] = "cordronecarry",
+			[14] = "cordesolator",
+			[15] = "coronager",
+		},
+	},
+	armgremlin = {
+		cloakcost = 25,
+		cloakcostmoving = 50,
+	},
+	corprinter = {
+		buildoptions = {
+			[5] = "corjamt",
+		},
+	},
+	cormls = {
+		buildoptions = {
+			[17] = "corfdrag",
+			[18] = "coratl",
+		},
+	},
+	armmls = {
+		buildoptions = {
+			[17] = "armfdrag",
+			[18] = "armatl",
+		},
+	},
+--synergy
+	corcsa = {
+		workertime = 80,
+		buildoptions = {
+			[49] = "coruwmme",
+			[47] = "corasy",
+			[48] = "coraap",
+		},
+	},
+
+	armcsa = {
+		workertime = 80,
+		buildoptions = {
+			[49] = "armuwmme",
+			[47] = "armasy",
+			[48] = "armaap",
+		},
+	},
+	corca = {
+		buildoptions = {
+			[34] = "corplat",
+		},
+	},
+
+	armca = {
+		buildoptions = {
+			[34] = "armplat",
+		},
+	},
+
+	armbeaver = {
+		buildoptions = {
+			[45] = "armasy",
+		},
+	},
+	cormuskrat = {
+		buildoptions = {
+			[45] = "corasy",
+		},
+	},
+
+	armacsub = {
+		buildoptions = {
+			[16] = "armmoho",
+		},
+		builddistance = 250,
+	},
+	coracsub = {
+		buildoptions = {
+			[16] = "cormoho",
+		},
+		builddistance = 250,
+	},
+
+--taxes
+	armfhlt = {
+		buildtime = 11000
+	},
+	corfhlt = {
+		buildtime = 11000
+	},
+
+	legfort = {
+		health = 20000,
+		metalcost = 4800,
+	},
+	corcrwh = {
+		metalcost = 4500,
+	},
+
+	corbats = {
+		weapondefs = {
+			cor_bats = {
+				range = 1000,
+			},
+		},
+	},
+	armbats = {
+		weapondefs = {
+			arm_bats = {
+				range = 1030,
+			},
+		},
+	},
+	armatl = {
+		metalcost = 850,
+	},
+	coratl = {
+		metalcost = 850,
+	},
+	armah = {
+		weapondefs = {
+			armah_weapon = {
+				range = 830,
+				reloadtime = 1.5,
+			},
+		},
+	},
+	corah = {
+		weapondefs = {
+			corah_weapon = {
+				range = 820,
+				reloadtime = 1.4,
+			},
+		},
+	},
+	legah = {
+		weapondefs = {
+			legfloat_gatling = {
+				range = 820,
+				damage = {
+					default = 6,
+					vtol = 11,
+				},
+			},
+		},
+	},
+    armaak = {
+        weapondefs = {
+            armaabot_missile1 = {
+		reloadtime = 2.6,
+            },
+            armaabot_missile2 = {
+		reloadtime = 1.3,
+            },
+        },
+    },
+    coraak = {
+	speed = 43,
+        weapondefs = {
+            coraabot_missile1 = {
+		range = 880,
+		reloadtime = 1.2,
+		damage = {
+			vtol = 120,
+		},
+            },
+            coraabot_missile2 = {
+		range = 850,
+		reloadtime = 1.5,
+		damage = {
+			vtol = 120,
+		},
+            },
+        },
+    },
+    armthor = {
+	weapondefs = {
+		thunder = {
+			customparams = {
+				spark_forkdamage = "0.3",
+				spark_maxunits = "6",
+			},
+			damage = {
+				default = 250,
+				subs = 30,
+			},
+		},
+		empmissile = {
+			energypershot = 7500,
+			metalpershot = 300,
+		},
+	},
+    },
+    armmav = {
+        autoheal = 40,
+        energycost = 10000,
+        metalcost = 650,
+        buildtime = 16000,
+        health = 1700,
+        customparams = {
+            rangexpscale = 0.6,
+        },
+        weapondefs = {
+            armmav_weapon = {
+                areaofeffect = 20,
+                craterareaofeffect = 0.01,
+		craterboost = 0.01,
+		cratermult = 0.01,
+                impactonly = 0,
+                range = 365,
+                impulsefactor = 1.6, 
+                weaponvelocity = 800,
+                noselfdamage = true,
+            },
+        },
+    },
+	corfast = {
+		buildoptions = {
+			[18] = "corwin",
+		},
+	},
+	armconsul = {
+		buildoptions = {
+			[20] = "armcs",
+		},
+	},
+	cormando = {
+		seismicdistance = 1150,
+		seismicsignature = 0,
+		customparams = {
+			paralyzemultiplier = 0.15,
+		},
+		buildoptions = {
+			[8] = "corrl",
+		},
+		weapons = {
+			[1] = {
+				onlytargetcategory = "NOTSUB",
+				fastautoretargeting = true,
+			},
+		},
+	},
+	armjanus = {
+		weapondefs = {
+			janus_rocket = {
+				range = 360,
+				--startvelocity = 90,
+				--flighttime = 1.5,
+				--mygravity = 200,
+                --turnrate = 5000,
+				damage = {
+					commanders = 200,
+				},
+			},
+		},
+	},
+	corlevlr = {
+		speed = 44,
+	},
+	corban = {
+		sightdistance = 600,
+		weapondefs = {
+			banisher = {
+				reloadtime = 7,
+				turnrate = 6000,
+				customparams = {
+					speceffect = "retarget",
+					when = "always",
+				},
+				damage = {
+					default = 1050,
+				},
+			},
+		},
+		weapons = {
+			[1] = {
+				fastautoretargeting = true,
+			},
+		},
+	},
+	cortrem = {
+		health = 4000,
+		energycost = 40000,
+	},
+	corshiva = {
+		speed = 52,
+		customparams = {
+			paralyzemultiplier = 0.15,
+		},
+		weapondefs = {
+			shiva_gun = {
+				leadlimit = 128,
+				proximityPriority  = -0.3,
+				areaofeffect = 145,
+				weaponvelocity = 380,
+			},
+			shiva_rocket = {
+				leadlimit = 128,
+				proximityPriority  = -0.3,
+				startvelocity = 140,
+				tolerance = 9000,
+				tracks = true,
+				turnrate = 20000,				
+				weaponacceleration = 120,
+				weapontimer = 1.1,
+			},
+		},
+	},
+cortermite = {
+	sightdistance = 500,
+	speed = 55,
+	weapondefs = {
+		cor_termite_laser = {
+			range = 400,
+			damage = {
+				default = 350,
+			},
+		},
+	},
+},
+armhlt = {
+	buildtime = 9000
+},
+corhlt = {
+	buildtime = 9150
+},
+}
+-----
